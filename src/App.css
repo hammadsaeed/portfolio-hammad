@@ -1,5 +1,82 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #4f8a8b;
+}
+
+.Center-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: fit-content;
+}
+
+/* .Center-container:hover {
+  background-color: yellow;
+}  */
+.Center-container .Circle-div:hover { 
+  background-color: green;
+  top: 5%;
+  left: 1%;
+
+}
+
+.Circle-div {
+  background: #222831;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.Circle-div:hover {
+  background-color: yellow;
+  /* animation: circleBounce infinite 1s linear; */
+  /* position: fixed; */
+  /* top: 5%; */
+}
+
+@keyframes circleBounce {
+  0% {
+    left: 0px;
+    position: absolute;
+    top: 5%;
+  }
+}
+
+.my-picture {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 20%;
+}
+
+.my-picture1 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0%, -48%);
+  width: 20%;
+  opacity: 0.75;
+  filter: blur(10px);
+}
+
+.my-picture2 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0%, -46%);
+  width: 20%;
+  opacity: 0.5;
+  filter: blur(10px);
+
+  
 }
 
 .App-logo {
