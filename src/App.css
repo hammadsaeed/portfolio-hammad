@@ -30,8 +30,8 @@
 .Circle-div {
   background: #222831;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 5vw;
+  height: 5vw;
 }
 
 .Circle-div:hover {
@@ -55,29 +55,92 @@
   top: 50%;
   transform: translate(0%, -50%);
   width: 20%;
+  user-select: none;
+  -webkit-user-drag: none;
 }
-
-.my-picture1 {
-  position: absolute;
-  left: 5%;
-  top: 50%;
+.blur2 {
+  transform: translate(0%, -46%);
+  opacity: 0.5;
+  filter: blur(10px);
+}
+.blur1 {
   transform: translate(0%, -48%);
-  width: 20%;
   opacity: 0.75;
   filter: blur(10px);
 }
-
-.my-picture2 {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translate(0%, -46%);
-  width: 20%;
-  opacity: 0.5;
-  filter: blur(10px);
-
+.border-picture {
+  width: 21%;
+  filter: blur(10px) brightness(0);
+  transform: translate(-2%, -49%);
   
 }
+.close-emoji {
+  margin: auto;  
+  filter: grayscale(6);
+  cursor: pointer;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+.name-title {
+  position: absolute;
+  font-family: Black Vosten Personal Use;
+  left: 38%;
+  top: 8%;
+  user-select: none;
+  -webkit-user-drag: none;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+.main-body-name {
+  margin: 0;
+  margin-top: -10%;
+  margin-left: -4%;
+  font-weight: 250;
+  font-size: 2.5vw;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+
+  }
+}
+
+
+.greeting-title {
+  font-weight: 350;
+  margin: 0;
+
+  /* top: -10%; */
+  font-size: 10vw;
+}
+
+#rotated-arrow-main {
+  top: 0%;
+  position: absolute;
+  left: 14%;
+  width: 16%;
+  transform: rotate(180deg) translate(-50%,-40%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;
