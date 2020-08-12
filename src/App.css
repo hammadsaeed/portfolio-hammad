@@ -83,14 +83,18 @@
 }
 .name-title {
   position: absolute;
-  src: url('/public/assets/black-font.ttf');
-  font-family: Black Vosten Personal Use;
   left: 38%;
   top: 8%;
   user-select: none;
   -webkit-user-drag: none;
   animation-duration: 3s;
   animation-name: fadeIn;
+  font-family: Black Vosten Personal Use;
+  
+}
+@font-face {
+  font-family: Black Vosten Personal Use;
+  src: url('./black-font.ttf') format("truetype");
 }
 .main-body-name {
   margin: 0;
