@@ -83,6 +83,7 @@
 }
 .name-title {
   position: absolute;
+  src: url('/public/assets/black-font.ttf');
   font-family: Black Vosten Personal Use;
   left: 38%;
   top: 8%;

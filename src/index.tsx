@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import { createGlobalStyle } from 'styled-components';
+
+// const getFont = './assets/black-font.ttf'
+// const GlobalStyles = createGlobalStyle`
+//   body {
+//     @import url(${getFont});
+//     font-family: 'Black Vosten Personal Use';
+//   }`
 
 ReactDOM.render(
   <React.StrictMode>
